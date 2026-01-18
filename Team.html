@@ -40,16 +40,29 @@
          
          /* 优化段落显示 */
          .member-paragraph {
-            margin-bottom: 15px;
-            line-height: 1.7;
+            margin-bottom: 8px;
+            line-height: 1.5;
             text-align: justify;
+            margin-top: 0;
          }
          
+         
+        /* 针对Academic Homepage下面的空行问题 */
+        .member-content p:last-of-type {
+            margin-bottom: 5px !important; /* Academic Homepage链接下面只留很小间距 */
+         }
+
+        /* 针对Academic Homepage链接的特殊处理 */
+        .member-content > p:has(a[href]) {
+            margin-top: 5px; /* 链接上面留一点间距 */
+            margin-bottom: 5px; /* 链接下面只留很小间距 */
+         }
+
          .member-title {
             color: #FFA500;
             font-weight: bold;
             margin-top: 5px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
          }
          
          .member-name {
