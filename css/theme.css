@@ -190,7 +190,7 @@ body>.navbar .brand:hover {
     margin-right: 20px;*/
 	border-radius: 4px;
 	box-shadow: 1px 1px 2px 0px #E0E0E0;
-	width: 70%;
+	width: 80%;
 	max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -225,7 +225,7 @@ body>.navbar .brand:hover {
 
 #media .post_row .post .img img {
 	height: auto;
-	width: 30%;
+	width: 60%;
 }
 
 #media .post_row .post .text {
