@@ -584,25 +584,26 @@ ul.sponsors {
 }
 
 
-/* 控制工作流程页面的图片大小 */
+/* 控制 Workflow 页面图片大小 */
 .workflow-img {
-    max-width: 170px;  /* 设置最大宽度 */
-    height: auto;      /* 高度自动调整，保持比例 */
-    margin: 10px;      /* 调整边距 */
+    max-width: 20%;  /* 最大宽度为屏幕宽度的20% */
+    width: 100%;     /* 响应式宽度 */
+    height: auto;    /* 保持宽高比 */
+    margin: 9px 15px 12px 15px; /* 调整边距 */
 }
 
 /* 响应式调整 */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     .workflow-img {
-        max-width: 140px;
-        float: none !important;  /* 在小屏幕上取消浮动 */
-        display: block;
-        margin: 10px auto;
+        max-width: 30%; /* 在平板设备上稍大一些 */
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .workflow-img {
-        max-width: 170px;
+        max-width: 45%; /* 在手机设备上更大一些 */
+        float: none;    /* 在小屏幕上取消浮动 */
+        display: block;
+        margin: 15px auto; /* 居中显示 */
     }
 }
