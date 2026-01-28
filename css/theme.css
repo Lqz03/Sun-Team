@@ -611,3 +611,77 @@ ul.sponsors {
         margin: 15px auto; /* 居中显示 */
     }
 }
+
+
+/* 优化轮播图箭头样式 */
+.carousel-control {
+    width: 30px; /* 更小宽度 */
+    height: 30px; /* 更小高度 */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none; /* 移除黑色背景 */
+    border: none; /* 移除边框 */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control:hover {
+    opacity: 1;
+    background: none; /* 确保悬停时也没有背景 */
+}
+
+/* 左箭头图标 */
+.carousel-control.left {
+    left: 15px; /* 距离左侧的距离 */
+    background-image: none; /* 移除默认背景图像 */
+}
+
+/* 右箭头图标 */
+.carousel-control.right {
+    right: 15px; /* 距离右侧的距离 */
+    background-image: none; /* 移除默认背景图像 */
+}
+
+/* 使用自定义箭头图标 */
+.carousel-control.left:before {
+    content: '<';
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control.right:before {
+    content: '>';
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .carousel-control {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .carousel-control.left:before,
+    .carousel-control.right:before {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-control {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .carousel-control.left:before,
+    .carousel-control.right:before {
+        font-size: 16px;
+    }
+}
