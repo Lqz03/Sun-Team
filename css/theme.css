@@ -586,23 +586,23 @@ ul.sponsors {
 
 /* 控制工作流程页面的图片大小 */
 .workflow-img {
-    max-width: 300px;  /* 设置最大宽度 */
+    max-width: 170px;  /* 设置最大宽度 */
     height: auto;      /* 高度自动调整，保持比例 */
     margin: 10px;      /* 调整边距 */
 }
 
 /* 响应式调整 */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .workflow-img {
-        max-width: 250px;
+        max-width: 140px;
         float: none !important;  /* 在小屏幕上取消浮动 */
         display: block;
         margin: 10px auto;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .workflow-img {
-        max-width: 200px;
+        max-width: 170px;
     }
 }
