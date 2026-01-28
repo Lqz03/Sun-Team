@@ -190,8 +190,12 @@ body>.navbar .brand:hover {
     margin-right: 20px;*/
 	border-radius: 4px;
 	box-shadow: 1px 1px 2px 0px #E0E0E0;
-	width: 487px;
-	height: 616px;
+	width: 70%;
+	max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+    min-height: 616px;
 }
 
 #media .post_row .last {
@@ -220,13 +224,13 @@ body>.navbar .brand:hover {
 }
 
 #media .post_row .post .img img {
-	height: 275px;
-	width: 410px;
+	height: auto;
+	width: 30%;
 }
 
 #media .post_row .post .text {
 	margin: 18px auto 0;
-	width: 83%;
+	width: 90%;
 }
 
 #media .post_row .post .text h5 {
